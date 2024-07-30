@@ -36,14 +36,12 @@ A web-based music player that allows users to browse, play, and manage songs. Th
    - Use the toggle switch at the top of the page to switch between light and dark mode.
 
 ## Project Structure
-
+.
 ├── index.html # The main HTML file
-├
 ├── styles.css # The main CSS file for styling
-├
 ├── player.js # JavaScript file for adding functionality
-├
 └── Audios/ # Folder containing audio files
+.
 
 
 ## Setup
