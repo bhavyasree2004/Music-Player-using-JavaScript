@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/29ca8fa889.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="Heading"> 
+        <div class="toggle-container">
+            <input type="checkbox" id="toggle" class="toggle-input">
+            <label for="toggle" class="toggle-label"></label>
+        </div>
+        <h1 style="text-align: center;">Music Player</h1>
+    </div>
+    <div id="container"> 
+        <div id="all-song">
+            <label for="genre">Filter by Genre: </label>
+            <select name="genre" id="genre">
+                <option value="all">all</option>
+                <option value="pop">pop</option>
+                <option value="rock">rock</option>
+                <option value="hip-hop">hip hop</option>
+            </select>
+            <div class="songs-list">
+                <h3>All Songs</h3>
+                <div id="song-buttons"> </div>
+            </div>
+        </div>
+        <div id="song-card">
+            <div id="song-details"> 
+                <div id="cover-image"><img src="https://pagesix.com/wp-content/uploads/sites/3/2014/08/harry-styles.jpg?quality=90&strip=all&w=1157" height="100%" width="100%" id="cover-image-source"></div>
+                <div id="song-name">As it was</div>
+                <div id="artist-name">Harry Styles</div>
+            </div>
+            <div id="song">
+                <audio controls id="audio">
+                    <source  src="AS_IT_WAS.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div id="song-options"> 
+                <button id="prev"><i class="fa-solid fa-backward"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="next"><i class="fa-solid fa-forward"></i></button>
+            </div>
+            <div id="playlist-button">
+                <button id="add-to-playlist">Add to playlist</button>
+            </div>
+        </div>
+        <div id="playlist">
+            <input type="text" id="playlist-name" placeholder="Enter playlist name">
+            <button id="create-playlist">Create Playlist</button>
+            <div id="playlists">
+                <h3>Current Playlist</h3>
+                <div id="current-playlist"></div>
+                <h3>All Playlists</h3>
+                <div id="all-playlists"></div>
+            </div>
+        </div>
+    </div>
+    <script src="player.js"></script>
+</body>
+</html>
+
