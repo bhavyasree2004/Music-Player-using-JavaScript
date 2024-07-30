@@ -38,11 +38,11 @@ A web-based music player that allows users to browse, play, and manage songs. Th
 ## Project Structure
 .
 ├── index.html # The main HTML file
-.
+
 ├── styles.css # The main CSS file for styling
-.
+
 ├── player.js # JavaScript file for adding functionality
-.
+
 └── Audios/ # Folder containing audio files
 
 ## Setup
